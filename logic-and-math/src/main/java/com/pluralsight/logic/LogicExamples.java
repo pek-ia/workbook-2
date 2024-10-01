@@ -43,5 +43,31 @@ public class LogicExamples {
         System.out.printf("%.2f\n", z);
         System.out.println(z);  // what value prints here?
 
+
+        // Comparison operators
+        // ==  !=  <  >  >=  <=  !
+
+        boolean done = false;
+        int counter = 0;
+        do {
+            System.out.println("talking.... words...");
+            if ( counter++ == 5 ) done = true;
+        } while( ! done);
+        System.out.println(counter);
+
+        counter =0;
+        while(counter != 5){
+            System.out.println("talking.... words...");
+            counter ++;
+        }
+
+        for (int i=0; i<5; i++){
+            System.out.println("Talking...");
+        }
+
+
+        if (counter > 0) {
+            System.out.println("We talked about it");
+        }
     }
 }
